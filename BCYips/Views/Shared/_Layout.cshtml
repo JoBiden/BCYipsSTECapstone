@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="utf-8" />
+        <title>@ViewBag.Title - BC Yips!</title>
+        <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+        <meta name="viewport" content="width=device-width" />
+        <link href="@Url.Content("~/Content/style.css")" rel="stylesheet" type="text/css" />
+        @RenderSection("Styles", false)
+        @Scripts.Render("~/bundles/modernizr")
+        @Scripts.Render("~/Scripts/jquery-1.7.1.min.js")
+    </head>
+    
+    <body class="@HttpContext.Current.Request.RequestContext.RouteData.Values["controller"].ToString()">
+        
+        <header>
+            @Html.Partial("_Logo")
+        </header>
+        
+        @if (Request.IsAuthenticated)
+        {
+            <nav>
+                <ul id="menu">
+                    <li>@Html.ActionLink("home", "Index", "Home")</li>
+                    <li>@Html.ActionLink("explore", "Explore", "Home")</li>
+                    <li>@Html.ActionLink(User.Identity.Name + "'s profile", "Index", "Profile")</li>
+                    <li>@Html.Partial("_LoginPartial")</li>
+                </ul>
+            </nav>
+        }
+        
+        <article>
+            <aside>
+                @RenderSection("aside", required: false)
+            </aside>
+        
+            <section>
+                @RenderBody()
+            </section>
+        </article>
+
+        <footer>
+            &copy; @DateTime.Now.Year - Bellevue College
+        </footer>
+
+        @Scripts.Render("~/bundles/jquery")
+        @RenderSection("scripts", required: false)
+    </body>
+</html>

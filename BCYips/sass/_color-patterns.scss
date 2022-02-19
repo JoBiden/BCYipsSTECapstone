@@ -1,0 +1,8 @@
+@mixin gradient-backdrop($color1, $color2, $stop-position) {
+    background-color: $color1;
+    background-image: -ms-linear-gradient(left, $color1 0%, $color2 $stop-position, $color1 100%);
+    background-image: -o-linear-gradient(left, $color1 0%, $color2 $stop-position, $color1 100%);
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(0, $color1), color-stop(.3, $color2), color-stop(1, $color1));
+    background-image: -webkit-linear-gradient(left, $color1 0%, $color2 $stop-position, $color1 100%);
+    background-image: linear-gradient(left, $color1 0%, $color2 $stop-position, $color1 100%);
+}

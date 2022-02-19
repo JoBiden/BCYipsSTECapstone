@@ -1,0 +1,18 @@
+$main-font: "Segoe UI", Verdana, Helvetica, Sans-Serif;
+$base-size: 1;
+$size-bigger1: $base-size + .1em;
+$size-bigger2: $base-size + .2em;
+$size-bigger3: $base-size + .3em;
+$size-bigger4: $base-size + .4em;
+$size-bigger5: $base-size + .5em;
+$size-smaller1: $base-size - .1em;
+$size-smaller2: $base-size - .2em;
+$size-smaller3: $base-size - .3em;
+$size-smaller4: $base-size - .4em;
+$size-smaller5: $base-size - .5em;
+
+@mixin comment-text {
+	color: $greyed-out-color;
+	font-size: $size-smaller4;
+	line-height: $size-bigger5;
+}

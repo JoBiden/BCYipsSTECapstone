@@ -1,0 +1,21 @@
+$base-color: #013d79;
+$base-color-lighten10: lighten($base-color, 10%);
+$base-color-lighten20: lighten($base-color, 20%);
+$base-color-lighten30: lighten($base-color, 30%);
+$base-color-darken10: darken($base-color, 10%);
+$base-color-darken20: darken($base-color, 20%);
+
+$secondary-color: #005da3;
+$secondary-color-lighten10: lighten($base-color, 10%);
+$secondary-color-lighten20: lighten($base-color, 20%);
+
+$text-background-color: #fff;
+$text-color: #000;
+
+$link-color: $base-color-darken10;
+$link-hover-color: $base-color-lighten20;
+$header-link-color: #fff;
+$header-link-hover-color: $base-color-lighten30;
+
+$greyed-out-color: #aaa;
+$glow-color: #9ecaed

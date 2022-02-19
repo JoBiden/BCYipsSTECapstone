@@ -1,0 +1,25 @@
+
+input[type=submit] {
+	display: inline-block;
+	-webkit-border-radius: 10px;
+	border: solid 1px rgb(0,0,0);
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(86,213,255,1)), color-stop(0.5, rgba(59,145,255,1)), color-stop(0.5, rgba(0,114,255,1)), to(rgba(0,133,255,1))); 
+	color: #fff;
+	text-shadow: #000 0 1px 0;
+	font: bold 16px/20px Helvetica, Sans-serif;
+	padding: 7px 16px;
+}
+
+input[type="text"], input[type="password"], textarea {
+    border:2px solid #dadada;
+    border-radius:7px;
+    padding:5px;
+	resize: none;
+	font-size: $size-bigger5;
+}
+
+input:focus, textarea:focus { 
+    outline:none;
+    border-color: $glow-color;
+    box-shadow:0 0 10px $glow-color;
+}

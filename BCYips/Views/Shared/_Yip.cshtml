@@ -1,0 +1,36 @@
+﻿@using BCYips.Models
+
+<div class="yip">
+    <div class="userpic"></div>
+    <div class="details">
+        <div class="heading">
+            @if (Model.ReYip != null)
+            {
+                <span class="fullname">@Model.ReYip.Yipper.FirstName @Model.ReYip.Yipper.LastName</span> <span class="username">@@@Model.ReYip.Yipper.UserName</span>
+            }
+            else
+            {
+                <span class="fullname">@Model.Yipper.FirstName @Model.Yipper.LastName</span> <span class="username">@@@Model.Yipper.UserName</span>
+            }
+        </div>
+        @if (Model.ReYip != null)
+        {
+            <div class="content">
+                @Model.ReYip.Content
+            </div>
+        }
+        @if (Model.ReplyTo != null)
+        {
+            <div class="content">
+                <span class="reply-to">@@@Model.ReplyTo.Yipper.UserName</span> <span class="reply-quote">"@Model.ReplyTo.Content"</span> ... <span class="yip-content">@Model.Content</span>
+            </div>
+        }
+        else if (!String.IsNullOrEmpty(Model.Content))
+        {
+            <div class="content">
+                @Model.Content
+            </div>
+        }
+        <div class="post-time">@Model.Posted</div>
+    </div>
+</div>

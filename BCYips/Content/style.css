@@ -1,0 +1,375 @@
+/* line 17, ../../../../../../../ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 1, ../sass/_links.scss */
+a {
+  outline: none;
+  text-decoration: none;
+}
+/* line 5, ../sass/_links.scss */
+a:link, a:visited, a:active {
+  font-weight: bold;
+  color: #012346;
+}
+/* line 10, ../sass/_links.scss */
+a:hover {
+  color: #0270de;
+}
+
+/* line 15, ../sass/_links.scss */
+nav a {
+  font-size: 0.8em;
+}
+/* line 18, ../sass/_links.scss */
+nav a:link, nav a:visited, nav a:active {
+  font-size: 0.8em;
+  color: white;
+}
+/* line 23, ../sass/_links.scss */
+nav a:hover {
+  font-size: 0.8em;
+  color: #1689fd;
+}
+
+/* line 2, ../sass/_buttons.scss */
+input[type=submit] {
+  display: inline-block;
+  -webkit-border-radius: 10px;
+  border: solid 1px black;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#56d5ff), color-stop(0.5, #3b91ff), color-stop(0.5, #0072ff), to(#0085ff));
+  color: #fff;
+  text-shadow: black 0 1px 0;
+  font: bold 16px/20px Helvetica, Sans-serif;
+  padding: 7px 16px;
+}
+
+/* line 2, ../sass/_forms.scss */
+input[type=submit] {
+  display: inline-block;
+  -webkit-border-radius: 10px;
+  border: solid 1px black;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#56d5ff), color-stop(0.5, #3b91ff), color-stop(0.5, #0072ff), to(#0085ff));
+  color: #fff;
+  text-shadow: black 0 1px 0;
+  font: bold 16px/20px Helvetica, Sans-serif;
+  padding: 7px 16px;
+}
+
+/* line 13, ../sass/_forms.scss */
+input[type="text"], input[type="password"], textarea {
+  border: 2px solid #dadada;
+  border-radius: 7px;
+  padding: 5px;
+  resize: none;
+  font-size: 1.5em;
+}
+
+/* line 21, ../sass/_forms.scss */
+input:focus, textarea:focus {
+  outline: none;
+  border-color: #9ecaed;
+  box-shadow: 0 0 10px #9ecaed;
+}
+
+/* line 1, ../sass/_global.scss */
+body {
+  font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
+  font-size: 1;
+  color: black;
+  background-color: #013d79;
+  background-image: -ms-linear-gradient(left, #013d79 0%, #005da3 30%, #013d79 100%);
+  background-image: -o-linear-gradient(left, #013d79 0%, #005da3 30%, #013d79 100%);
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #013d79), color-stop(0.3, #005da3), color-stop(1, #013d79));
+  background-image: -webkit-linear-gradient(left, #013d79 0%, #005da3 30%, #013d79 100%);
+  background-image: linear-gradient(left, #013d79 0%, #005da3 30%, #013d79 100%);
+}
+
+/* line 8, ../sass/_global.scss */
+h2 {
+  font-size: 1.2em;
+  font-weight: bold;
+  line-height: 2em;
+}
+
+/* line 14, ../sass/_global.scss */
+header {
+  margin-left: 10%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+/* line 21, ../sass/_global.scss */
+nav {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 10px;
+}
+/* line 25, ../sass/_global.scss */
+nav li {
+  display: inline-block;
+  padding-right: 10px;
+}
+
+/* line 31, ../sass/_global.scss */
+table {
+  width: 100%;
+}
+/* line 33, ../sass/_global.scss */
+table thead {
+  font-weight: bold;
+}
+
+/* line 38, ../sass/_global.scss */
+table, tr, td {
+  border: solid 1px #aaaaaa;
+  text-align: center;
+}
+
+/* line 43, ../sass/_global.scss */
+article {
+  background-color: white;
+  padding-bottom: 20px;
+}
+
+/* line 48, ../sass/_global.scss */
+aside, section {
+  vertical-align: top;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+/* line 54, ../sass/_global.scss */
+aside {
+  margin-top: 20px;
+  margin-left: 20px;
+  width: 35%;
+}
+
+/* line 60, ../sass/_global.scss */
+section {
+  margin-left: 10px;
+}
+
+/* line 64, ../sass/_global.scss */
+footer {
+  color: white;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  margin-left: 10%;
+}
+
+/* line 11, ../sass/style.scss */
+.logo-mascot {
+  display: inline-block;
+}
+/* line 13, ../sass/style.scss */
+.logo-mascot img {
+  height: 60px;
+}
+
+/* line 18, ../sass/style.scss */
+.logo-yips {
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* line 23, ../sass/style.scss */
+.logo-bc {
+  display: inline-block;
+  position: relative;
+  left: -88px;
+}
+/* line 27, ../sass/style.scss */
+.logo-bc img {
+  height: 25px;
+}
+
+/* line 32, ../sass/style.scss */
+.userpic {
+  background-color: grey;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+}
+
+/* line 37, ../sass/style.scss */
+.yip {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #aaaaaa;
+}
+/* line 42, ../sass/style.scss */
+.yip .fullname, .yip .username {
+  color: #0156ac;
+  font-size: 0.8em;
+}
+/* line 46, ../sass/style.scss */
+.yip .fullname {
+  font-weight: bold;
+}
+/* line 49, ../sass/style.scss */
+.yip .details {
+  display: inline-block;
+  vertical-align: top;
+}
+/* line 53, ../sass/style.scss */
+.yip .content {
+  font-weight: bold;
+  font-size: 0.9em;
+}
+/* line 57, ../sass/style.scss */
+.yip .post-time {
+  color: #aaaaaa;
+  font-size: 0.6em;
+  line-height: 1.5em;
+}
+
+/* line 62, ../sass/style.scss */
+.profile-new-yip {
+  margin-right: 10px;
+  width: 300px;
+  float: right;
+}
+/* line 66, ../sass/style.scss */
+.profile-new-yip .profile {
+  display: inline-block;
+}
+/* line 68, ../sass/style.scss */
+.profile-new-yip .profile .userpic {
+  background-color: grey;
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  margin-right: 10px;
+}
+/* line 72, ../sass/style.scss */
+.profile-new-yip .profile .profile-container {
+  display: inline-block;
+  vertical-align: top;
+  font-weight: bold;
+}
+/* line 76, ../sass/style.scss */
+.profile-new-yip .profile .profile-container .username {
+  display: block;
+  font-size: 0.8em;
+  line-height: 1.5em;
+}
+/* line 81, ../sass/style.scss */
+.profile-new-yip .profile .profile-container .profile-link, .profile-new-yip .profile .profile-container .profile-info tbody tr td {
+  font-weight: normal;
+  color: #aaaaaa;
+  font-size: 0.8em;
+  line-height: 1.5em;
+}
+/* line 87, ../sass/style.scss */
+.profile-new-yip .profile .profile-container .profile-info {
+  width: 180px;
+}
+/* line 89, ../sass/style.scss */
+.profile-new-yip .profile .profile-container .profile-info tbody tr td {
+  font-weight: normal;
+  color: #aaaaaa;
+  font-size: 0.8em;
+}
+/* line 94, ../sass/style.scss */
+.profile-new-yip .profile .profile-container .profile-info td {
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+/* line 103, ../sass/style.scss */
+.profile-new-yip .yip-form-container {
+  margin-top: 10px;
+}
+/* line 105, ../sass/style.scss */
+.profile-new-yip .yip-form-container textarea {
+  width: 285px;
+}
+/* line 108, ../sass/style.scss */
+.profile-new-yip .yip-form-container #char-count {
+  color: #aaaaaa;
+  font-size: 0.6em;
+  line-height: 1.5em;
+}
+/* line 111, ../sass/style.scss */
+.profile-new-yip .yip-form-container .create-yip-button {
+  float: right;
+}
+
+/* line 118, ../sass/style.scss */
+.Account article {
+  background-color: transparent;
+}
+/* line 120, ../sass/style.scss */
+.Account article label {
+  color: white;
+}
+/* line 123, ../sass/style.scss */
+.Account article input[type="submit"] {
+  float: right;
+}

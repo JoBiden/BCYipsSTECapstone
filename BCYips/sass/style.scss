@@ -1,0 +1,126 @@
+@import "compass/reset";
+@import "colors";
+@import "color-patterns";
+@import "fonts";
+@import "links";
+@import "buttons";
+@import "forms";
+@import "placeholders";
+@import "global";
+
+.logo-mascot {
+	display: inline-block;
+	img {
+		height: 60px;
+	}
+}
+
+.logo-yips {
+	display: inline-block;
+    vertical-align: top;
+}
+
+.logo-bc {
+	display: inline-block;
+    position: relative;
+    left: -88px;
+	img {
+		height: 25px;
+	}
+}
+
+.userpic {
+	@include image-placeholder(40px,40px);
+	display: inline-block;
+}
+
+.yip {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid $greyed-out-color;
+	
+	.fullname, .username {
+		color: $base-color-lighten10;
+		font-size: $size-smaller2;
+	}
+	.fullname {
+		font-weight: bold;
+	}
+	.details {
+		display: inline-block;
+		vertical-align: top;
+	}
+	.content {
+		font-weight: bold;
+		font-size: $size-smaller1;
+	}
+	.post-time {
+		@include comment-text;
+	}
+}
+
+.profile-new-yip {
+	margin-right: 10px;
+	width: 300px;
+	float: right;
+	.profile {
+		display: inline-block;
+		.userpic {
+			@include image-placeholder(100px,100px);
+			margin-right: 10px;
+		}
+		.profile-container {
+			display: inline-block;
+			vertical-align: top;
+			font-weight: bold;
+			.username {
+				display: block;
+				font-size: $size-smaller2;
+				line-height: $size-bigger5;
+			}
+			.profile-link, .profile-info tbody tr td {
+				font-weight: normal;
+				color: $greyed-out-color;
+				font-size: $size-smaller2;
+				line-height: $size-bigger5;
+			}
+			 .profile-info {
+				width: 180px;
+				tbody tr td {
+					font-weight: normal;
+					color: $greyed-out-color;
+					font-size: $size-smaller2;
+				}
+				td {
+					padding-top: 2px;
+					padding-bottom: 2px;
+					padding-left: 5px;
+					padding-right: 5px;
+				}
+			}
+		}
+	}
+	.yip-form-container {
+		margin-top: 10px;
+		textarea {
+			width: 285px;
+		}
+		#char-count {
+			@include comment-text;
+		}
+		.create-yip-button {
+			float: right;
+		}
+	}
+}
+
+
+.Account article {
+	background-color: transparent;
+	label {
+		color: $text-background-color;
+	}
+	input[type="submit"] {
+		float:right;
+	}
+}

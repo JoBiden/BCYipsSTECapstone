@@ -1,0 +1,6 @@
+@mixin image-placeholder($width, $height) {
+    background-color: grey;
+    display: inline-block;
+    width: $width;
+    height: $height;
+}

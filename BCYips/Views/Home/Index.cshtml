@@ -1,0 +1,36 @@
+﻿@using BCYips.Models
+@{
+    ViewBag.Title = "Home Page";
+}
+
+@section aside
+{
+    <div class="profile-new-yip">
+        <div class="profile">
+            <div class="userpic"></div>
+            <div class="profile-container">
+                <span class="fullname">@ViewBag.Profile.FirstName @ViewBag.Profile.LastName</span> <span class="username">@@@ViewBag.Profile.UserName</span>
+                <span class="profile-link">View my profile</span>
+                <table class="profile-info">
+                    <thead>
+                        <td>#</td>
+                        <td>#</td>
+                        <td>#</td>
+                    </thead>
+                    <tr>
+                        <td>Yips</td>
+                        <td>Watched</td>
+                        <td>Watchers</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="yip-form-container">
+            @Html.Partial("_PostYip", (Yip) new Yip {Yipper = ViewBag.Profile})
+        </div>
+    </div>
+}
+
+<div class="yips-list">
+    @Html.Partial("_Yips", (List<Yip>) ViewBag.Yips)
+</div>

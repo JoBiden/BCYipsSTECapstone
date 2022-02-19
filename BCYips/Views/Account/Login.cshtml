@@ -1,0 +1,37 @@
+﻿@model BCYips.Models.LoginModel
+
+@{
+    ViewBag.Title = "Log in";
+}
+
+@section Styles {
+    <link href="@Url.Content("~/Content/Login.css")" rel="stylesheet" type="text/css" />
+}
+
+<section id="loginForm">
+@using (Html.BeginForm(new { ReturnUrl = ViewBag.ReturnUrl })) {
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+        <ol>
+            <li class="username-line">
+                @Html.TextBoxFor(m => m.UserName, new {placeholder="Username"} )
+                @Html.ValidationMessageFor(m => m.UserName)
+            </li>
+            <li class="password-line">
+                @Html.PasswordFor(m => m.Password, new {placeholder="Password"} )
+                @Html.ValidationMessageFor(m => m.Password)
+            </li>
+            <li class="remember-line">
+                @Html.CheckBoxFor(m => m.RememberMe)
+                @Html.LabelFor(m => m.RememberMe, new { @class = "checkbox" })
+            </li>
+            <li class="submit-line">
+                <input type="submit" value="Sign in" />                
+            </li>
+        </ol>
+}
+</section>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

@@ -1,0 +1,27 @@
+a {
+    outline: none;
+    text-decoration: none;
+	
+	&:link, &:visited, &:active {
+		font-weight: bold;
+		color: $link-color;
+	}
+	
+	&:hover {
+		color: $link-hover-color;
+	}
+}
+
+nav a {
+	font-size: $size-smaller2;
+
+	&:link, &:visited, &:active {
+		font-size: $size-smaller2;
+		color: $header-link-color;
+	}
+	
+	&:hover {
+		font-size: $size-smaller2;
+		color: $header-link-hover-color;
+	}
+}

@@ -1,0 +1,7 @@
+﻿@using BCYips.Models
+
+<h2>All Yips!</h2>
+@foreach (var yip in Model)
+{
+    @Html.Partial("_Yip", (Yip) yip)
+}

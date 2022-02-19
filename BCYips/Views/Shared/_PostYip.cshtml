@@ -1,0 +1,21 @@
+﻿@model BCYips.Models.Yip
+
+@using (Html.BeginForm("Create", "Yips")) {
+    @Html.ValidationSummary(false)
+    <script src="~/Scripts/counter.js"></script>
+
+    <fieldset>
+        <div class="editor-field">
+            @Html.TextAreaFor(model => model.Content, new { placeholder = "Compose new yip...", rows = "7", maxlength = "140"})
+            @Html.ValidationMessageFor(model => model.Content)
+        </div>
+        <p>
+            <label id="char-count">140</label>
+            <input class="create-yip-button" type="submit" value="Yip!" />
+        </p>
+    </fieldset>
+}
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

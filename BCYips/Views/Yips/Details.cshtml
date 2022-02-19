@@ -1,0 +1,36 @@
+﻿@model BCYips.Models.Yip
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Yip</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Yipper.UserName)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Yipper.UserName)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Content)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Content)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Posted)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Posted)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
